@@ -9,7 +9,7 @@ const users = [
   {
     name: "Brook",
     scores: 75,
-    skills: ["HTM", "CSS", "JS"],
+    skills: ["HTML", "CSS", "JS"],
     age: 16,
   },
   {

@@ -52,11 +52,11 @@ const users = [
 
 const { width, height, area, perimeter } = rectangle;
 console.log(
-  `Width: ${width}, Height: ${height}, Area:${area}, Perimer: ${perimeter}`
+  `${width} ${height} ${area} ${perimeter}`
 );
 users.forEach((user) => {
   const { name, scores, skills, age } = user;
   console.log(
-    `Name: ${name}, Scores: ${scores}, Skills: ${skills}, Age: ${age}  `
+    `${name} ${scores} ${skills} ${age}  `
   );
 });

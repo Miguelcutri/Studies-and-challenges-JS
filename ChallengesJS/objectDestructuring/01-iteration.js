@@ -50,13 +50,8 @@ const users = [
   },
 ];
 
-const { width, height, area, perimeter } = rectangle;
-console.log(
-  `${width} ${height} ${area} ${perimeter}`
-);
+console.log(Object.keys(rectangle));
+
 users.forEach((user) => {
-  const { name, scores, skills, age } = user;
-  console.log(
-    `${name} ${scores} ${skills} ${age}  `
-  );
+  console.log(Object.keys(user));
 });

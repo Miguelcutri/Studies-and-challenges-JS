@@ -1,0 +1,19 @@
+#joke-generator {
+  margin-top: 25%;
+  align-items: center;
+  text-align: center;
+}
+#btn {
+  border-radius: 5px;
+  padding: 15px 50px 15px 50px;
+  border: none;
+  color: white;
+  background-color: grey;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #a9a9a9;
+  font-size: 18px;
+  transition: 0.2s;
+}

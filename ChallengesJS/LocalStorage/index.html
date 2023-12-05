@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Sistema financeiro</title>
+</head>
+
+<body>
+  <h1>Sistema Financeiro</h1>
+  <div class="container">
+    <h4>Balanço</h4>
+    <h1 id="balance" class="balance">R$ 0,00</h1>
+    <div class="revenue-container">
+      <div>
+        <h4>
+          Receitas
+        </h4>
+        <p id="money-increment" class="money increment">+ R$0,00</p>
+      </div>
+      <div>
+        <h4>Despesas</h4>
+        <p id="money-decrement" class="money decrement">- R$ 0,00</p>
+      </div>
+    </div>
+    <h2>Transações</h2>
+
+    <ul id="transactions" class="transactions">
+
+    </ul>
+    <h2>Adicionar transação</h2>
+
+    <form action="form" id="form">
+      <div class="form-control">
+        <label for="text">Nome</label>
+        <input autofucus type="text" id="text" placeholder="Nome da transação">
+      </div>
+      <div class="form-control">
+        <label for="lastname">Sobrenome</label>
+        <input type="text" id="lastname" placeholder="Sobrenome do titular da transação">
+      </div>
+
+      <div class="form-control">
+        <label for="text">Valor: <br>
+        </label>
+        <input type="number" id="amount" placeholder="Valor da transação">
+      </div>
+
+      <button class="btn">Adicionar</button>
+    </form>
+
+  </div>
+  <script src="02-financeSystem.js"></script>
+
+</body>
+
+</html>

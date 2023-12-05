@@ -3,7 +3,5 @@
   height: 16px;
   background-color: #999;
   border-radius: 100%;
-  margin-left: 50%;
-  margin-top: 25%;
+  position: absolute;
 }
-

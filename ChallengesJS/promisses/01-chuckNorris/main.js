@@ -1,13 +1,19 @@
 const title = document.getElementById("title");
 const button = document.getElementById("btn");
-const img = document.getElementById("img");
 
-async function pegarDados(e) {
-  const r = await fetch("https://api.chucknorris.io/jokes/random");
-  const json = await r.json();
-  console.log(json);
-  title.innerHTML = json.value;
-  img.src = json.icon_url;
-  console.log(json.value);
+async function pegarDados() {
+  try {
+    const response = await fetch("https://api.chucknorris.io/jokes/random");
+
+    if (!response.ok) {
+      throw new Error(`Erro de HTTP, status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    title.innerHTML = json.value;
+  } catch (error) {
+    console.error("Erro ao buscar dados: ", error);
+    title.innerHTML = "Erro ao carregar dados";
+  }
 }
 button.onclick = pegarDados;

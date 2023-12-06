@@ -8,12 +8,19 @@
   padding: 15px 50px 15px 50px;
   border: none;
   color: white;
-  background-color: grey;
+  background-color: #d66e45;
 }
 
 #btn:hover {
   cursor: pointer;
-  background-color: #a9a9a9;
+  background-color: #fd6c35;
   font-size: 18px;
   transition: 0.2s;
+  font-weight: bold;
+}
+
+body {
+  background-color: #fcbb5d;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }

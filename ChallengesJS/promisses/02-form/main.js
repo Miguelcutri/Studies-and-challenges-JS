@@ -25,7 +25,7 @@ async function pegarDados() {
     }
 
     const json = await response.json();
-    title.innerHTML = `${json.logradouro} | ${json.bairro} | ${json.localidade} | ${json.uf}`;
+    title.innerHTML = ` ${json.bairro} | ${json.logradouro} | ${json.localidade} | ${json.uf}`;
   } catch (error) {
     console.error("Erro ao buscar dados: ", error);
     title.innerHTML = "Erro ao carregar dados";

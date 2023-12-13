@@ -1,15 +1,24 @@
-export interface Funcionario {
+interface Funcionario {
   nome: string;
   cargo: string;
 }
-const Desenvolvedor: Funcionario = {
+
+interface Desenvolvedor extends Funcionario {
+  linguagens: string[];
+}
+interface Designer extends Funcionario {
+  ferramentasDesign: string[];
+}
+
+const Desenvolvedor: Desenvolvedor = {
   nome: "Miguel",
   cargo: "Desenvolvedor",
+  linguagens: ["JavaScript", "TypeScript"],
 };
-const Design: Funcionario = {
+const Designer: Designer = {
   nome: "Hugo",
   cargo: "Design",
+  ferramentasDesign: ["Figma", "Photoshop"],
 };
-// Não consegui entender essa parte:
-let DesenvolvedorOuDesign: Desenvolvedor | Design;
-let DesenvolvedorEDesign: Desenvolvedor & Design;
+let DesenvolvedorOuDesign: Desenvolvedor | Designer;
+let DesenvolvedorEDesign: Desenvolvedor & Designer;

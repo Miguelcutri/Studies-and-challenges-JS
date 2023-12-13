@@ -10,15 +10,15 @@ interface Designer extends Funcionario {
   ferramentasDesign: string[];
 }
 
-const desenvolvedor: Desenvolvedor = {
+const dev: Desenvolvedor = {
   nome: "Miguel",
   cargo: "Desenvolvedor",
   linguagens: ["JavaScript", "TypeScript"],
 };
-const designer: Designer = {
+const des: Designer = {
   nome: "Hugo",
   cargo: "Design",
   ferramentasDesign: ["Figma", "Photoshop"],
 };
-let desenvolvedorOuDesign: Desenvolvedor | Designer;
-let desenvolvedorEDesign: Desenvolvedor & Designer;
+let DesenvolvedorOuDesign: Desenvolvedor | Designer;
+let DesenvolvedorEDesign: Desenvolvedor & Designer;

@@ -1,20 +1,4 @@
-interface Animal {
-  nome: string;
-  tipo: string;
+function concatenarArrays<N, S>(array1: N, array2: S) {
+  console.log(`${array1},${array2}`);
 }
-
-interface Ave extends Animal {
-  asas: boolean;
-}
-
-const Passarinho: Ave = {
-  nome: "biro biro",
-  tipo: "pardal",
-  asas: true,
-};
-const Mamifero: Animal = {
-  nome: "leão",
-  tipo: "felino",
-};
-
-console.log(Mamifero, Passarinho);
+concatenarArrays<number[], string[]>([1, 2, 3], ["3", "2", "1"]);

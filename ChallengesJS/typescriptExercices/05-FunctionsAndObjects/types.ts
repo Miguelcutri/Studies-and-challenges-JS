@@ -1,20 +1,18 @@
-interface Animal {
+function Adicionar(a: number, b: number) {
+  return console.log(a + b);
+}
+
+interface Pessoa {
   nome: string;
-  tipo: string;
+  idade: number;
 }
-
-interface Ave extends Animal {
-  asas: boolean;
-}
-
-const Passarinho: Ave = {
-  nome: "biro biro",
-  tipo: "pardal",
-  asas: true,
-};
-const Mamifero: Animal = {
-  nome: "leão",
-  tipo: "felino",
+const pessoa: Pessoa = {
+  nome: "Miguel",
+  idade: 24,
 };
 
-console.log(Mamifero, Passarinho);
+function imprimirPessoa(pessoa: Pessoa) {
+  console.log(`Nome: ${pessoa.nome}, Idade: ${pessoa.idade}`);
+}
+
+imprimirPessoa(pessoa);

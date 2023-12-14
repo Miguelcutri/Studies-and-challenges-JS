@@ -9,4 +9,3 @@ function toNumber(value: number | string) {
 }
 
 console.log(toNumber(5));
-console.log(toNumber("string"));
